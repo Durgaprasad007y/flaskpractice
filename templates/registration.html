@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>    
+    <title>Registration Page</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to Mastan Tech Solutions</h1>
+        <h2>Register Here</h2>
+        {% if message %}
+        <p>{{message}}</p>
+        {% endif %}
+        <form action="/register" method="post">
+            <label>Email-id:</label>&nbsp;&nbsp;
+                <input type="email" name="email" placeholder="Ex: abc@gmail.com" required>
+                <br><br>
+            <label>Password:</label>&nbsp;&nbsp;
+                <input type="password" name="password" placeholder="Ex: abc@123" required>
+                <br><br>
+            <button type="submit">Login</button>
+        </form>
+    </center>
+</body>
+</html>
